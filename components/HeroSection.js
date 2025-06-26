@@ -25,7 +25,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-4 text-lg md:text-xl text-gray-300 max-w-xl"
         >
-          Code that speaks, stories that move, and strength that inspires. I'm a
+          Code that speaks, stories that move, and strength that inspires. I&apos;m a
           full-stack developer with a love for pixels and people. Always
           learning, always building — always me. 🚀
         </motion.p>
