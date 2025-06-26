@@ -22,11 +22,11 @@ export default function AboutSection() {
           className="backdrop-blur-md bg-white/5 p-8 rounded-xl border border-white/10 shadow-lg"
         >
           <p className="text-lg leading-relaxed text-gray-300">
-            I'm <span className="text-purple-400 font-semibold">Tamanna Singh</span>, a fourth-year BTech student passionate about building meaningful and accessible web experiences. Whether it's crafting sleek UIs or developing full-stack applications, I love turning creative ideas into reality.
+            I&#39;m <span className="text-purple-400 font-semibold">Tamanna Singh</span>, a fourth-year BTech student passionate about building meaningful and accessible web experiences. Whether it&#39;s crafting sleek UIs or developing full-stack applications, I love turning creative ideas into reality.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-300 mt-4">
-            🎓 I'm currently pursuing my BTech in Computer Science at <span className="text-purple-400 font-semibold">Dr. Akhilesh Das Gupta Institute of Professional Studies</span>, New Delhi (2022–2026).
+            🎓 I&#39;m currently pursuing my BTech in Computer Science at <span className="text-purple-400 font-semibold">Dr. Akhilesh Das Gupta Institute of Professional Studies</span>, New Delhi (2022–2026).
           </p>
 
           <p className="text-lg leading-relaxed text-gray-300 mt-4">
@@ -34,12 +34,12 @@ export default function AboutSection() {
           </p>
 
           <p className="text-lg leading-relaxed text-gray-300 mt-4">
-            🎭 Whether it's hosting events with <span className="text-purple-300 font-semibold">FUN</span> or solving DSA problems, I always show up with energy and intent.
+            🎭 Whether it&#39;s hosting events with <span className="text-purple-300 font-semibold">FUN</span> or solving DSA problems, I always show up with energy and intent.
           </p>
 
           <div className="mt-6 grid sm:grid-cols-2 gap-4 text-sm text-gray-400">
             <p>💡 I enjoy solving real-world problems through code.</p>
-            <p>🎤 I'm also a public speaker & anchor 🎙️</p>
+            <p>🎤 I&#39;m also a public speaker & anchor 🎙️</p>
             <p>💪 Gym lover — strength & frontend gains!</p>
             <p>📚 Always learning — currently exploring Next.js</p>
             <p>🍿 I unwind with comedy and rom-com movies & web series</p>
