@@ -16,7 +16,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl font-extrabold text-white"
         >
-          Hi, I&#39;m <span className="text-purple-500">Tamanna Singh</span>
+          Hi, I&apos;m <span className="text-purple-500">Tamanna Singh</span>
         </motion.h1>
 
         <motion.p
