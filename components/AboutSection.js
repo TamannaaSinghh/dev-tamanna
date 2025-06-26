@@ -22,7 +22,7 @@ export default function AboutSection() {
           className="backdrop-blur-md bg-white/5 p-8 rounded-xl border border-white/10 shadow-lg"
         >
           <p className="text-lg leading-relaxed text-gray-300">
-            I&apos;m <span className="text-purple-400 font-semibold">Tamanna Singh</span>, a fourth-year BTech student passionate about building meaningful and accessible web experiences. Whether it&apos;s crafting sleek UIs or developing full-stack applications, I love turning creative ideas into reality.
+            I&apos;m <span className="text-purple-400 font-semibold">Tamanna Singh</span>, a fourth-year BTech student passionate about building meaningful and accessible web experiences.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-300 mt-4">
@@ -33,11 +33,9 @@ export default function AboutSection() {
             💯 With a CGPA of <span className="text-purple-300 font-semibold">8.70+</span>, I balance academics, leadership, and a love for building cool web stuff.
           </p>
 
-          <p className="text-lg leading-relaxed text-gray-300 mt-4">
-            🎭 Whether it&apos;s hosting events with <span className="text-purple-300 font-semibold">FUN</span> or solving DSA problems, I always show up with energy and intent.
-          </p>
+        
 
-          <div className="mt-6 grid sm:grid-cols-2 gap-4 text-sm text-gray-400">
+          {/* <div className="mt-6 grid sm:grid-cols-2 gap-4 text-sm text-gray-400">
             <p>💡 I enjoy solving real-world problems through code.</p>
             <p>🎤 I&apos;m also a public speaker & anchor 🎙️</p>
             <p>💪 Gym lover — strength & frontend gains!</p>
@@ -46,7 +44,7 @@ export default function AboutSection() {
             <p>🛫 Travelling & street food hunting fuel my creativity</p>
             <p>🎨 I love designing beautiful and accessible frontend UIs</p>
             <p>🎭 Actively involved in cultural events</p>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>
