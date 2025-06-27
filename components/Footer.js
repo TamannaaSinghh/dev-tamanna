@@ -15,7 +15,7 @@ export default function Footer() {
         {/* Left: Branding */}
         <div className="text-center md:text-left">
           <h3 className="text-xl font-semibold text-purple-400">Tamanna Singh</h3>
-          <p className="text-sm text-gray-400">Turning ideas into interactive web experiences ✨</p>
+          <p className="text-sm text-gray-400">Turning ideas into interactive web experiences!</p>
         </div>
 
         {/* Middle: Contact Link */}

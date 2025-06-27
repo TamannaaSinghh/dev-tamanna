@@ -22,7 +22,7 @@ export default function ContactSection() {
           className="text-gray-400 mb-12 text-sm"
         >
           Wanna build something cool? Have a crazy idea? Or just wanna say hi?  
-          Drop a message — I don’t bite! 💌
+          Drop a message - I don’t bite! 
         </motion.p>
 
         <motion.form
