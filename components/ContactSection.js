@@ -1,8 +1,21 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useRef } from 'react'
 
 export default function ContactSection() {
+  const formRef = useRef(null)
+
+  const handleSubmit = (e) => {
+    const form = formRef.current
+    const message = form.message.value.trim()
+
+    if (!message) {
+      e.preventDefault()
+      alert("Please enter a valid message before submitting.")
+    }
+  }
+
   return (
     <section id="contact" className="py-28 px-6 bg-gradient-to-br from-black via-gray-900 to-black text-white">
       <div className="max-w-4xl mx-auto text-center">
@@ -26,10 +39,12 @@ export default function ContactSection() {
         </motion.p>
 
         <motion.form
+          ref={formRef}
+          onSubmit={handleSubmit}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          action="https://formspree.io/f/mgvypjrz" // ✅ Your Formspree link here
+          action="https://formspree.io/f/mgvypjrz"
           method="POST"
           className="grid gap-6 text-left backdrop-blur-lg bg-white/5 border border-white/10 p-8 rounded-2xl shadow-lg"
         >
@@ -72,7 +87,7 @@ export default function ContactSection() {
             type="submit"
             className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full mt-4 transition"
           >
-             Submit
+            Submit
           </motion.button>
         </motion.form>
       </div>

@@ -29,8 +29,8 @@ export default function Footer() {
         <div className="flex items-center gap-5 justify-center text-xl">
           <a href="https://github.com/TamannaaSinghh" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400"><FaGithub /></a>
           <a href="https://linkedin.com/in/tamanna-singh-760792284" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400"><FaLinkedin /></a>
-          <a href="https://instagram.com/yourinstagram" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400"><FaInstagram /></a>
-          <a href="mailto:singhtamannaa21@gmail.com" className="hover:text-purple-400"><FaEnvelope /></a>
+          <a href="https://www.instagram.com/tamannaa.singhh/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400"><FaInstagram /></a>
+          <a href="mailto:tamannaasinghh1214@gmail.com" className="hover:text-purple-400"><FaEnvelope /></a>
         </div>
       </div>
 
