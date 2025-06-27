@@ -26,7 +26,7 @@ export default function AboutSection() {
           </p>
 
           <p className="text-lg leading-relaxed text-gray-300 mt-4">
-            🎓 I&apos;m currently pursuing my BTech in Computer Science at <span className="text-purple-400 font-semibold">Dr. Akhilesh Das Gupta Institute of Professional Studies</span>, New Delhi (2022–2026).
+             I&apos;m currently pursuing my BTech in Computer Science at <span className="text-purple-400 font-semibold">Dr. Akhilesh Das Gupta Institute of Professional Studies</span>, New Delhi (2022–2026).
           </p>
 
           <p className="text-lg leading-relaxed text-gray-300 mt-4">
