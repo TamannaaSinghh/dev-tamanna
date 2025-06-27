@@ -34,7 +34,7 @@ export default function HobbiesSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-gray-400 mb-10 text-sm max-w-xl mx-auto"
         >
-          I’m more than just a full-stack developer — here’s a peek into what sparks my joy outside the code editor! 💃
+          I’m more than just a full-stack developer - here’s a peek into what sparks my joy outside the code editor! 
         </motion.p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">

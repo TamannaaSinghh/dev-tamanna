@@ -30,7 +30,7 @@ export default function AboutSection() {
           </p>
 
           <p className="text-lg leading-relaxed text-gray-300 mt-4">
-            💯 With a CGPA of <span className="text-purple-300 font-semibold">8.70+</span>, I balance academics, leadership, and a love for building cool web stuff.
+             With a CGPA of <span className="text-purple-300 font-semibold">8.70+</span>, I balance academics, leadership, and a love for building cool web stuff.
           </p>
 
         

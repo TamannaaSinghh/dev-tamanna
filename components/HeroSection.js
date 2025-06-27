@@ -27,7 +27,7 @@ export default function HeroSection() {
         >
           Code that speaks, stories that move, and strength that inspires. I&apos;m a
           full-stack developer with a love for pixels and people. Always
-          learning, always building — always me. 🚀
+          learning, always building - always me. 🚀
         </motion.p>
 
         <motion.div

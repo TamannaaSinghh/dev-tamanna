@@ -72,7 +72,7 @@ export default function ContactSection() {
             type="submit"
             className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full mt-4 transition"
           >
-            🚀 Submit
+             Submit
           </motion.button>
         </motion.form>
       </div>
