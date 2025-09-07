@@ -44,7 +44,7 @@ export default function HeroSection() {
           </a>
 
           <a
-            href="/Tamanna_Singh_Resume.pdf"
+            href="https://drive.google.com/file/d/1jRAEKAcMqzUzmIvu2sr8yfnIAKJfweLh/view?usp=drive_link"
             download
             className="flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-6 rounded-full transition"
           >
