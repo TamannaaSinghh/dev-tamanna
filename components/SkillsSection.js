@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion'
 
 const skills = {
-  Languages: ['C', 'C++', 'Python', 'R', 'Java', 'JavaScript', 'TypeScript'],
+  Languages: ['C', 'C++', 'Python', 'Java', 'JavaScript', 'TypeScript'],
   Frontend: ['HTML', 'CSS', 'Tailwind CSS', 'React.js', 'Next.js', 'npm'],
-  Backend: ['Node.js', 'Express.js', 'Firebase', 'PHP'],
+  Backend: ['Node.js', 'Express.js', 'Firebase', 'Wordpress'],
   Databases: ['MongoDB', 'PostgreSQL', 'MySQL', 'Mongoose'],
   Tools: ['Vercel', 'AWS', 'Open API Space', 'DSA', 'OOPS', 'CN', 'OS', 'DBMS']
 }

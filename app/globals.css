@@ -1,26 +1,144 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ============================================================
+   DESIGN SYSTEM — "Editorial Tech-Noir"
+   Deep ink · warm bone text · electric lime accent
+   ============================================================ */
+
+@theme {
+  /* Color tokens */
+  --color-ink: #0a0a0b;
+  --color-ink-soft: #101013;
+  --color-bone: #ecebe4;
+  --color-bone-dim: #a2a199;
+  --color-bone-faint: #6f6f68;
+  --color-lime: #c6f24b;
+  --color-lime-soft: #d7f87e;
+  --color-line: rgba(236, 235, 228, 0.09);
+  --color-line-strong: rgba(236, 235, 228, 0.16);
+
+  /* Fonts (wired to next/font CSS variables) */
+  --font-display: var(--font-bricolage), "Bricolage Grotesque", sans-serif;
+  --font-body: var(--font-hanken), "Hanken Grotesk", sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ---------- Base ---------- */
+* {
+  border-color: var(--color-line);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-ink);
+  color: var(--color-bone);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-lime);
+  color: #0a0a0b;
+}
+
+/* ---------- Typographic helpers ---------- */
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+.text-balance { text-wrap: balance; }
+
+/* Eyebrow / kicker label */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-lime);
+}
+
+/* Gradient text used sparingly on hero */
+.text-gradient {
+  background: linear-gradient(180deg, #ffffff 0%, #c9c8c0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Atmospheric background layers ---------- */
+.bg-grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------- Glow / glass utilities ---------- */
+.glass {
+  background: linear-gradient(
+    180deg,
+    rgba(236, 235, 228, 0.04) 0%,
+    rgba(236, 235, 228, 0.015) 100%
+  );
+  border: 1px solid var(--color-line);
+  backdrop-filter: blur(12px);
+}
+
+.glow-lime {
+  box-shadow: 0 0 0 1px rgba(198, 242, 75, 0.12),
+    0 18px 60px -20px rgba(198, 242, 75, 0.28);
+}
+
+/* Animated link underline */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1px;
+  width: 100%;
+  background: var(--color-lime);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: #26261f;
+  border-radius: 999px;
+  border: 2px solid var(--color-ink);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #34342a;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -1,25 +1,43 @@
 import './globals.css'
-import { Poppins } from 'next/font/google'
+import { Bricolage_Grotesque, Hanken_Grotesk, JetBrains_Mono } from 'next/font/google'
 
-const poppins = Poppins({
+const bricolage = Bricolage_Grotesque({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-bricolage',
+  display: 'swap',
+})
+
+const hanken = Hanken_Grotesk({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
+  variable: '--font-hanken',
+  display: 'swap',
+})
+
+const jetbrains = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-jetbrains',
   display: 'swap',
 })
 
 export const metadata = {
-  title: 'Tamanna Portfolio',
-  description: 'Built with Next.js',
+  title: 'Tamanna Singh — Full-Stack Developer',
+  description:
+    'Tamanna Singh — full-stack developer crafting fast, accessible, and beautiful web experiences with React, Next.js, and Node.js.',
   icons: {
-    icon: '/faviconn.png', // ✅ Add this line
+    icon: '/hero%20bg.jpeg',
   },
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={poppins.variable}>
-      <body className="font-sans">{children}</body>
+    <html
+      lang="en"
+      className={`${bricolage.variable} ${hanken.variable} ${jetbrains.variable}`}
+    >
+      <body className="font-body bg-grain antialiased">{children}</body>
     </html>
   )
 }
