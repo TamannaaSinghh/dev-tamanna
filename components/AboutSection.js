@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { FiMapPin, FiBookOpen, FiAward } from 'react-icons/fi'
+import SectionMotif from './SectionMotif'
 
 const facts = [
   { icon: <FiBookOpen />, label: 'Education', value: 'B.Tech CSE · ADGIPS, New Delhi (2022–2026)' },
@@ -20,12 +21,15 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-14"
+          className="mb-14 flex flex-col justify-between gap-6 sm:flex-row sm:items-end"
         >
-          <p className="eyebrow">01 — About</p>
-          <h2 className="mt-3 font-display text-4xl font-bold tracking-tight text-bone sm:text-5xl">
-            The person behind the code
-          </h2>
+          <div>
+            <p className="eyebrow">01 — About</p>
+            <h2 className="mt-3 font-display text-4xl font-bold tracking-tight text-bone sm:text-5xl">
+              The person behind the code
+            </h2>
+          </div>
+          <SectionMotif className="self-start sm:self-auto" />
         </motion.div>
 
         <div className="grid items-start gap-10 lg:grid-cols-[1.4fr_1fr]">

@@ -1,40 +1,82 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { FiArrowUpRight } from 'react-icons/fi'
+import SectionMotif from './SectionMotif'
 
 const projects = [
   {
     index: '01',
-    title: 'IMDB Clone',
+    title: 'Interview Prep AI',
+    image: '/prepai.png',
     description:
-      'A movie discovery app to search, browse, and explore films in real time using the TMDB API, with a responsive, fast-loading interface.',
-    tech: ['React', 'TMDB API', 'CSS'],
-    link: 'https://imdb-next-ebon.vercel.app/',
+      'Ace your next tech interview with an AI that listens — AI-generated questions, live voice mock interviews, and curated tutorials to sharpen every answer.',
+    tech: ['Next.js', 'React.js', 'Voice AI', 'Groq / LLaMA', 'YouTube API', 'Google OAuth', 'Tailwind CSS'],
+    link: 'https://prep-ai-sandy.vercel.app/login',
   },
   {
     index: '02',
-    title: 'ChatWise',
+    title: 'Raskrti Art',
+    image: '/raskrtiart.png',
     description:
-      'A real-time chat application with live messaging, authentication, and persistent storage powered by a Firebase backend.',
-    tech: ['React', 'Firebase', 'CSS'],
-    link: 'https://chat-wise-six.vercel.app/',
+      'An e-commerce storefront for traditional Indian art — Madhubani, Pichwai and more — with a gallery, courses, and a smooth buying flow.',
+    tech: ['Next.js', 'React.js', 'E-commerce UI', 'Tailwind CSS', 'Responsive Layouts'],
+    link: 'https://raskrtiart.in/',
   },
   {
     index: '03',
-    title: '3D Web Experience',
+    title: 'AI WorkForge',
+    image: '/aiworkforge.png',
     description:
-      'An immersive 3D landing page integrating Spline scenes with React for interactive, motion-rich storytelling.',
-    tech: ['React', 'Spline', '3D'],
-    link: 'https://spline-model-hh4ql049w-tamanna-singhs-projects.vercel.app/',
+      'An AI workspace that turns rough ideas into polished emails in seconds, with tone control plus summarize, sentiment and classify tools.',
+    tech: ['Next.js', 'React.js', 'Groq AI API', 'Supabase', 'Google OAuth', 'Prompt System', 'Tailwind CSS'],
+    link: 'https://ai-workforge-gdqh.vercel.app/',
   },
   {
     index: '04',
-    title: 'QuantumFit — Gym Landing',
+    title: 'Trivantage',
+    image: '/trivantage.png',
     description:
-      'A bold, conversion-focused gym landing page with crisp layout, smooth interactions, and a fully responsive build.',
-    tech: ['HTML', 'Tailwind', 'JavaScript'],
-    link: 'https://tamannaasinghh.github.io/Gym-Website--TailwindCSS/',
+      'A brand site for a SEBI-registered boutique portfolio manager — focused, disciplined long-term wealth, told through clean editorial design.',
+    tech: ['Next.js', 'React.js', 'Tailwind CSS', 'Responsive UI', 'WordPress'],
+    link: 'https://trivantagecapital.vercel.app/',
+  },
+  {
+    index: '05',
+    title: 'ChatWise',
+    image: '/chatwise.png',
+    description:
+      'A fast, private real-time chat app with instant messaging, media sharing and seamless sync, powered by a Node.js and Express backend.',
+    tech: ['Next.js', 'React.js', 'Node.js', 'Express.js', 'Real-time Chat', 'Auth', 'Tailwind CSS'],
+    link: 'https://chat-wise-six.vercel.app/',
+  },
+  {
+    index: '06',
+    title: 'AccuraCap',
+    image: '/accuracap.png',
+    description:
+      'A polished marketing site for a boutique, quant-driven fund management firm built for long-term investors.',
+    tech: ['Next.js', 'React.js', 'Tailwind CSS', 'Sanity CMS', 'Cloudflare'],
+    link: 'https://www.accuracap.com/',
+  },
+  {
+    index: '07',
+    title: 'Swasthya AI',
+    image: '/swasthyaai.png',
+    description:
+      'A culturally intelligent health companion that blends modern science with Indian wellness to guide users through their concerns.',
+    tech: ['Next.js', 'Gemini AI API', 'Tailwind CSS', 'Dark UI'],
+    link: 'https://swasthya-ai-ten.vercel.app/',
+  },
+  {
+    index: '08',
+    title: 'MoneyGrow',
+    image: '/moneygrow.png',
+    description:
+      'A wealth-management landing site for disciplined, long-term investing across PMS and AIF strategies.',
+    tech: ['Next.js', 'React.js', 'Tailwind CSS', 'Responsive UI', 'Sanity CMS'],
+    link: 'https://money-grow-lemon.vercel.app/',
   },
 ]
 
@@ -55,17 +97,10 @@ export default function ProjectsSection() {
               Things I&apos;ve built
             </h2>
           </div>
-          <a
-            href="https://github.com/TamannaaSinghh"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-underline inline-flex items-center gap-1.5 self-start font-mono text-sm text-bone-dim transition-colors hover:text-lime sm:self-auto"
-          >
-            All projects on GitHub <FiArrowUpRight />
-          </a>
+          <SectionMotif className="self-start sm:self-auto" />
         </motion.div>
 
-        <div className="grid gap-5 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project, i) => (
             <motion.a
               key={project.title}
@@ -75,37 +110,52 @@ export default function ProjectsSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.08 }}
-              className="group glass relative flex flex-col overflow-hidden rounded-3xl p-8 transition-all duration-500 hover:-translate-y-1 hover:border-lime/30"
+              transition={{ duration: 0.6, delay: (i % 2) * 0.08 }}
+              className="group glass relative flex flex-col overflow-hidden rounded-3xl transition-all duration-500 hover:-translate-y-1.5 hover:border-lime/30 hover:glow-lime"
             >
-              {/* Hover glow */}
-              <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-lime/10 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
+              {/* Thumbnail */}
+              <div className="relative aspect-[3/2] w-full overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06]"
+                />
+                {/* Palette tint + bottom fade into the card */}
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/5 to-transparent" />
+                <div className="pointer-events-none absolute inset-0 bg-lime/0 mix-blend-soft-light transition-colors duration-500 group-hover:bg-lime/10" />
 
-              <div className="mb-6 flex items-start justify-between">
-                <span className="font-mono text-sm text-bone-faint">
+                {/* Index badge */}
+                <span className="absolute left-4 top-4 rounded-full border border-line-strong bg-ink/50 px-2.5 py-1 font-mono text-xs text-bone backdrop-blur-md">
                   {project.index}
                 </span>
-                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-line-strong text-bone-dim transition-all duration-300 group-hover:border-lime group-hover:bg-lime group-hover:text-ink">
+
+                {/* Visit arrow */}
+                <span className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full border border-line-strong bg-ink/50 text-bone backdrop-blur-md transition-all duration-300 group-hover:border-lime group-hover:bg-lime group-hover:text-ink">
                   <FiArrowUpRight className="text-lg transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </span>
               </div>
 
-              <h3 className="font-display text-2xl font-bold text-bone transition-colors duration-300 group-hover:text-lime">
-                {project.title}
-              </h3>
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-bone-dim">
-                {project.description}
-              </p>
+              {/* Body */}
+              <div className="flex flex-1 flex-col p-7">
+                <h3 className="font-display text-2xl font-bold text-bone transition-colors duration-300 group-hover:text-lime">
+                  {project.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-bone-dim">
+                  {project.description}
+                </p>
 
-              <div className="mt-6 flex flex-wrap gap-2">
-                {project.tech.map((t) => (
-                  <span
-                    key={t}
-                    className="rounded-full border border-line px-3 py-1 font-mono text-[0.7rem] text-bone-dim"
-                  >
-                    {t}
-                  </span>
-                ))}
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {project.tech.map((t) => (
+                    <span
+                      key={t}
+                      className="rounded-full border border-line px-3 py-1 font-mono text-[0.7rem] text-bone-dim transition-colors duration-300 group-hover:border-line-strong"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
               </div>
             </motion.a>
           ))}
