@@ -23,9 +23,9 @@ const jetbrains = JetBrains_Mono({
 })
 
 export const metadata = {
-  title: 'Tamanna Singh — Full-Stack Developer',
+  title: 'Tamanna Singh - Full Stack Developer',
   description:
-    'Tamanna Singh — full-stack developer crafting fast, accessible, and beautiful web experiences with React, Next.js, and Node.js.',
+    'Tamanna Singh - full-stack developer crafting fast, accessible, and beautiful web experiences with React, Next.js, and Node.js.',
   icons: {
     icon: '/hero%20bg.jpeg',
   },

@@ -167,9 +167,6 @@ export default function Footer() {
           <p className="font-mono text-xs text-bone-faint">
             © {new Date().getFullYear()} Tamanna Singh. All rights reserved.
           </p>
-          <p className="font-mono text-xs text-bone-faint">
-            Designed &amp; built with Next.js + Tailwind
-          </p>
         </div>
       </motion.div>
     </footer>
