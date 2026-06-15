@@ -87,10 +87,9 @@ export default function HeroSection() {
           className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-6 lg:justify-start"
         >
           {[
-            { n: '1 yr', l: 'Experience' },
+            { n: '2+ yr', l: 'Experience' },
             { n: '12+', l: 'Clients' },
             { n: '20+', l: 'Projects' },
-            { n: '8.9', l: 'CGPA' },
           ].map((s) => (
             <div key={s.l} className="text-center lg:text-left">
               <div className="font-display text-2xl font-bold text-bone">

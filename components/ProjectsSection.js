@@ -11,7 +11,7 @@ const projects = [
     title: 'Interview Prep AI',
     image: '/prepai.png',
     description:
-      'Ace your next tech interview with an AI that listens — AI-generated questions, live voice mock interviews, and curated tutorials to sharpen every answer.',
+      'Ace your next tech interview with an AI that listens - AI-generated questions, live voice mock interviews, and curated tutorials to sharpen every answer.',
     tech: ['Next.js', 'React.js', 'Voice AI', 'Groq / LLaMA', 'YouTube API', 'Google OAuth', 'Tailwind CSS'],
     link: 'https://prep-ai-sandy.vercel.app/login',
   },
@@ -20,7 +20,7 @@ const projects = [
     title: 'Raskrti Art',
     image: '/raskrtiart.png',
     description:
-      'An e-commerce storefront for traditional Indian art — Madhubani, Pichwai and more — with a gallery, courses, and a smooth buying flow.',
+      'An e-commerce storefront for traditional Indian art - Madhubani, Pichwai and more - with a gallery, courses, and a smooth buying flow.',
     tech: ['Next.js', 'React.js', 'E-commerce UI', 'Tailwind CSS', 'Responsive Layouts'],
     link: 'https://raskrtiart.in/',
   },
@@ -38,7 +38,7 @@ const projects = [
     title: 'Trivantage',
     image: '/trivantage.png',
     description:
-      'A brand site for a SEBI-registered boutique portfolio manager — focused, disciplined long-term wealth, told through clean editorial design.',
+      'A brand site for a SEBI-registered boutique portfolio manager - focused, disciplined long-term wealth, told through clean editorial design.',
     tech: ['Next.js', 'React.js', 'Tailwind CSS', 'Responsive UI', 'WordPress'],
     link: 'https://trivantagecapital.vercel.app/',
   },

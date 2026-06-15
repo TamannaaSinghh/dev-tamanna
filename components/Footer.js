@@ -43,7 +43,9 @@ export default function Footer() {
 
           <div className="flex items-center gap-3">
             <a
-              href="mailto:tamannaasinghh1214@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=tamannaasinghh1214@gmail.com&su=Let%27s%20connect"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 rounded-full bg-lime px-6 py-3 font-semibold text-ink transition-all duration-300 hover:gap-3 hover:shadow-[0_0_40px_-8px_rgba(198,242,75,0.5)]"
             >
               Get in touch
@@ -133,6 +135,12 @@ export default function Footer() {
                 className="w-fit text-bone-dim transition-colors hover:text-lime"
               >
                 tamannaasinghh1214@gmail.com
+              </a>
+              <a
+                href="mailto:singhtamannaa21@gmail.com"
+                className="w-fit text-bone-dim transition-colors hover:text-lime"
+              >
+                singhtamannaa21@gmail.com
               </a>
               <span className="text-bone-dim">New Delhi, India</span>
               <a

@@ -7,7 +7,7 @@ import SectionMotif from './SectionMotif'
 
 const facts = [
   { icon: <FiBookOpen />, label: 'Education', value: 'B.Tech CSE · ADGIPS, New Delhi (2022–2026)' },
-  { icon: <FiAward />, label: 'Academics', value: 'CGPA 8.9 · consistent top performer' },
+  { icon: <FiAward />, label: 'Academics', value: 'CGPA 9 · consistent top performer' },
   { icon: <FiMapPin />, label: 'Based in', value: 'New Delhi, India' },
 ]
 
@@ -56,7 +56,7 @@ export default function AboutSection() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-2.5">
-              {['Problem-solver', 'Accessibility tester','Web Developer', 'Public speaker', 'Lifelong learner'].map(
+              {['Problem-solver', 'Accessibility tester','Web Developer', 'Public speaker', 'Anchor', 'Lifelong learner'].map(
                 (tag) => (
                   <span
                     key={tag}

@@ -46,7 +46,7 @@ export default function ContactSection() {
             </h2>
             <p className="mt-6 max-w-md text-bone-dim">
               Have a project in mind, a role to fill, or just want to say hi? My
-              inbox is always open — I&apos;ll get back to you as soon as I can.
+              inbox is always open - I&apos;ll get back to you as soon as I can.
             </p>
 
             <a
@@ -69,6 +69,17 @@ export default function ContactSection() {
                   {s.icon}
                 </a>
               ))}
+            </div>
+
+            {/* Availability status */}
+            <div className="mt-10 inline-flex items-center gap-2.5 rounded-full border border-lime/30 bg-lime/[0.06] px-4 py-2">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime opacity-75" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-lime" />
+              </span>
+              <span className="font-mono text-xs uppercase tracking-[0.15em] text-lime">
+                Available for work
+              </span>
             </div>
           </motion.div>
 
