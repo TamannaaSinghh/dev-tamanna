@@ -71,7 +71,7 @@ export default function HeroSection() {
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1LTGwQCcUag7_6cKbzH44kivyF8Sgrvct/view?usp=drive_link"
+            href="/Dev Tamanna Singh.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-line-strong px-7 py-3.5 font-semibold text-bone transition-colors duration-300 hover:border-lime/50 hover:text-lime sm:w-auto"

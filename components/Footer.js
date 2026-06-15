@@ -144,7 +144,7 @@ export default function Footer() {
               </a>
               <span className="text-bone-dim">New Delhi, India</span>
               <a
-                href="https://drive.google.com/file/d/1LTGwQCcUag7_6cKbzH44kivyF8Sgrvct/view?usp=drive_link"
+                href="/Dev Tamanna Singh.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-fit items-center gap-1.5 text-lime transition-opacity hover:opacity-80"
